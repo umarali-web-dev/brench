@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body h2 {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: #615F5F;
+    }
+
+    .card {
+      background-color: #E2DEED;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+      height: 90vh;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(4, 100px);
+      gap: 20px;
+    }
+
+    .log {
+      grid-column: 1/6;
+
+    }
+
+    .side-bar {
+      grid-row: 2/10;
+      background-color: #E2DEED;
+      position: relative;
+    }
+
+    .side-bar h2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .main {
+      grid-column: 2/6;
+      grid-row: 2/6;
+      position: relative;
+    }
+
+    .main h2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+    }
+
+    .footer {
+      grid-column: 2/6;
+      grid-row: 6/10;
+      position: relative;
+    }
+
+    .footer h2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .btn-item1 {
+      width: 70px;
+      height: 6px;
+      background-color: #C5BCDA;
+      border-radius: 10px;
+    }
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .head-btn {
+      padding: 0px 40px;
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+
+
+    .head-loggo {
+      padding: 0px 40px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card log">
+      <div class="wrapper">
+        <div class="head-loggo">
+          <h2>LOGO</h2>
+        </div>
+        <div class="head-btn">
+          <div class="btn-item1"></div>
+          <div class="btn-item1"></div>
+          <div class="btn-item1"></div>
+        </div>
+      </div>
+    </div>
+    <div class="card side-bar">
+      <h2>Sidebar</h2>
+    </div>
+    <div class="card main">
+      <h2>Mian</h2>
+    </div>
+    <div class="card footer">
+      <h2>Footer</h2>
+    </div>
+  </div>
+</body>
+
+</html>

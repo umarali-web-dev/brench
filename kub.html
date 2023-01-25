@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: rgb(195, 188, 188);
+  }
+
+  .container {
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    background-color: aliceblue;
+    position: relative;
+  }
+
+
+
+  .first-kubs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    transform: rotate(45deg);
+    width: 400px;
+    height: 100px;
+
+
+  }
+
+  .left-kub {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(315deg, #ed7e55e1 50%, #991723 50%);
+    top: 10px;
+    left: 230px;
+    /* transition: all; */
+    /* transform: rotateZ(227deg); */
+
+  }
+
+  .right-kub {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(315deg, #d6286e 50%, #991724 50%);
+    top: 10px;
+    left: 60px;
+    /* transition: all; */
+    /* transform: rotateZ(223deg); */
+  }
+
+  .small-kub {
+    position: absolute;
+    top: 68%;
+    left: 30%;
+    width: 70px;
+    height: 70px;
+    /* transform: rotateZ(226deg); */
+    background-image: linear-gradient(315deg, #4da56fd1 50%, #151207d5 50%);
+  }
+
+  .third-kub {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 100px;
+    height: 100px;
+    /* transform: rotateZ(227deg); */
+    background-image: linear-gradient(315deg, #5EB88C 50%, #083f1dd1 50%);
+    z-index: 1;
+  }
+
+  .thir-kub2 {
+    position: absolute;
+    top: -15%;
+    left: 35%;
+    width: 100px;
+    height: 100px;
+    /* transform: rotateZ(227deg); */
+    background-image: linear-gradient(315deg, #5eb88dc6 50%, #083f1d70 50%);
+    z-index: 2;
+
+  }
+
+  .bottom-kub {
+    position: absolute;
+    top: 85%;
+    left: 39%;
+    width: 100px;
+    height: 100px;
+    /* transform: rotateZ(227deg); */
+    background-image: linear-gradient(315deg, #EB4825 50%, #FEB781 50%);
+  }
+
+  .top {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    width: 100px;
+    height: 100px;
+    /* transform: rotateZ(227deg); */
+    background-image: linear-gradient(315deg, #4fe5edeb 50%, #0B9AB8 50%);
+    z-index: 3;
+
+  }
+</style>
+
+<body>
+  <div class="container">
+
+    <div class="first-kubs">
+      <div class="left-kub"></div>
+      <div class="thir-kub2"></div>
+      <div class="thir-kub2"></div>
+      <div class="right-kub"></div>
+      <div class="bottom-kub"></div>
+      <div class="small-kub"></div>
+      <div class="third-kub"></div>
+      <div class="top"></div>
+    </div>
+
+  </div>
+</body>
+
+</html>

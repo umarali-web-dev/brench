@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .item {
+      border: 3px solid #246FE8;
+      background-color: #84E2FE;
+    }
+
+    .conteiner {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: repeat(5, 100px);
+
+    }
+
+    .header {
+      grid-column: 1/8;
+      text-align: center;
+    }
+
+    .menu {
+      grid-row: 2/4;
+      text-align: center;
+    }
+
+    .main {
+      grid-column: 2/5;
+      text-align: center;
+    }
+
+    .right {
+      grid-column: 5/8;
+      text-align: center;
+    }
+
+    .footer {
+      grid-column: 2/8;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="conteiner">
+    <div class="header item">
+      <h2>Header</h2>
+    </div>
+    <div class="menu item">
+      <h2>Menu</h2>
+    </div>
+    <div class="main item">
+      <h2>Main</h2>
+    </div>
+    <div class="right item">
+      <h2>Right</h2>
+    </div>
+    <div class="footer item">
+      <h2>Footer</h2>
+    </div>
+  </div>
+</body>
+
+</html>
